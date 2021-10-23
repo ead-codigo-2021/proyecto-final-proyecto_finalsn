@@ -9,22 +9,31 @@
 	<link rel="stylesheet" href="assets/css/framework.css">
 	<link rel="stylesheet" href="assets/css/docs.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Framework</title>
 </head>
 
 <body>
-	<header class="page-header">
-		<nav>
-			<label>Titulo</label>
-			<ul class="main-nav">
-				<li class="main-nav__item"><a href="index.html">Item 1</a></li>
-				<li class="main-nav__item"><a href="sobre_mi/sobre_mi.html">Item 2</a></li>
-				<li class="main-nav__item"><a href="clases/clases.html">Item 3</a></li>
-				<li class="main-nav__item"><a href="proyectos/proyectos.html">Item 4</a></li>
-			</ul>
-		</nav>
+	<header>
+        <div class="brand-logo">
+            <a href="#"><img src="https://www.markuptag.com/images/white-logo-icon.png" alt="Brand Logo"></a>
+        </div>
 
-	</header>
+        <input type="checkbox" id="toggle-btn">
+        <label for="toggle-btn" class="show-menu-btn"><i class="fas fa-bars"></i></label>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#"><i class="fas fa-house-damage"></i> Home</a></li>
+                <li><a href="#"><i class="far fa-image"></i> Item 1</a></li>
+                <li><a href="#"><i class="fab fa-blogger-b"></i> Item 2</a></li>
+                <li><a href="#"><i class="fas fa-question"></i> Item 3</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+                <label for="toggle-btn" class="hide-menu-btn"><i class="fas fa-times"></i></label>
+                <input type="text" placeholder="Search..">
+            </ul>
+        </nav>
+    </header>
 	<h1> Ofertas de halloween</h1>
 	<main class="container">
 		<div class="box">
@@ -52,7 +61,10 @@
 		//Botón redes sociales// -->
 	</main>
 	<footer>
-
+		<a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
 	</footer>
 
 </body>

@@ -14,77 +14,116 @@ html{
     --font-family-title: 'Roboto' , sans-serif;
     --font-family-base: 'Zilla Slab', serif;
 }
-nav{
-    background-color:var(--color-principal1);
-   /* text-align: center;*/
-    justify-content: space-between;
-    display: flex;
-}
-label{
-    font-size: 35px;
-    font-weight: bold;
-    color: whitesmoke;
-    padding: 0 100px;
-    line-height: 80px;
-    font-family: var(--font-family-title);
-    text-transform: uppercase;
-
-}
-.main-nav {
-    float: right;
-    list-style: none;
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    background-color:var(--color-principal1);
+header {
+    height: 5rem;
+    width: 100%;
+    float: left;
+    background: #17706E;
+    padding: 0 20px;
+    color: #F7F7EE;
+    border-radius: 20px;
     
 }
-.main-nav__item{
-    display: inline-block;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    color:var(--color-principal1);
-    padding-right: 100px;
-
+.brand-logo {
+    max-width: 50px;
+    float: left;
+    padding: 14px 0px;
 }
-.main-nav__item a {
-    color:whitesmoke;
-    padding: 5px;
-    text-decoration: none;
+.brand-logo img {
+    max-width: 100%;
+}
+.navigation {
+    margin: 0px;
+    float: right;
+}
+.navigation input [type=text]{
+        float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+}
+.navigation li {
+    list-style: none;
+    float: left;
+}
+.navigation li a {
+    color: #F7F7EE;
+    padding: 28px 15px;
     text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
 }
-h1{
-    font-family: var(--font-family-title);
-    color:var(--color-principal1);
-    padding-top: 3rem;
-    padding-bottom: 3rem ;
-    margin-right: auto;
-    margin-left: auto;
+.navigation li a i {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn {
+    margin: 0px;
+    float: right;
+}
+.show-menu-btn i {
+    line-height: 100px;
+}
+.navigation a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #0a3534;
+}
+#toggle-btn {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    border-radius: 50px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram{
+      background-color: mediumvioletred;
+      color: mintcream;
+  }
+  .fa-whatsapp{
+      background: mediumseagreen;
+      color: mintcream;
+  }
 
-}
 
-@media (max-width: 909px){
-    nav #icon{
-        display: block;
-    }
-    nav ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #17706e;
-        top: 80px;
-        left:0;
-        text-align: center;
-    }
-    nav li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav a{
-        font-size: 20px;
-    }
-}
 .container{
     display: flex;
     justify-content: space-around;
@@ -107,3 +146,43 @@ h1{
 img.contain{
     object-fit: contain;
   }
+
+/*-- Responsive CSS --*/
+@media screen and (max-width:767px) {
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+    }
+    .navigation {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #17706E;
+        top: -100%;
+        left: 0;
+        padding: 50px 0px;
+        transition: 1s;
+    }
+    .navigation li {
+        width: 100%;
+    }
+    .navigation li a {
+        padding: 15px 15px;
+        text-align: left;
+    }
+    .navigation li a i {
+        width: auto;
+        font-size: 20px;
+    }
+    .hide-menu-btn {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    #toggle-btn:checked ~ nav .navigation {
+        top: 0px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+      }
+    }
