@@ -1,0 +1,121 @@
+/*Reset de estilos*/
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+/*variables*/
+
+:root {
+    --color-principal1: #17706e;
+    --color-principal2: #fb7813;
+    --font-family-title: 'Roboto', sans-serif;
+    --font-family-base: 'Zilla Slab', serif;
+}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 1024px) {
+    /* here begins the header*/
+    .page-header {
+        width: 100%;
+        height: 25vh;
+        background-color: var(--color-principal1);
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .header-background {
+        width: 100%;
+        height: 15vh;
+    }
+    span {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold;
+        color: whitesmoke;
+        font-family: var(--font-family-title);   
+        margin-left: 1rem;
+        padding-top: 1rem;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 10vh;
+    }
+    .main-nav {
+        display: flex;
+        list-style: none;
+        background-color: var(--color-principal1);
+        justify-content: flex-end;
+    }
+    .main-nav__item {
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        color: var(--color-principal1);
+    }
+    .main-nav__item a {
+        color: whitesmoke;
+        padding: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .main-nav__item a:hover {
+        color: var(--color-principal2);
+        border-bottom: var(--color-principal2) solid;
+    }
+    .main-nav__item a:focus {
+        background: var(--color-principal2);
+    }
+    /* here begins the main*/
+    .center-h1 {
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        font-family: var(--font-family-title);
+        color: var(--color-principal1);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 2.3rem;
+    }
+    .item {
+        grid-column: 1 / 5;
+        padding-bottom: 1rem;
+    }
+    h2 {
+        font-family: var(--font-family-title);
+        color: var(--color-principal2);
+        font-size: 1.5rem;  
+      margin-left: 2rem;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 2rem;
+    }
+    .grid-container figure {
+        display: grid;
+        color: var(--color-principal1);
+        padding-bottom: 2rem;
+    }
+    .grid-container figure img {
+        background-color: #D9D9D9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 18rem;
+        height: 18rem;
+        border-radius: 2rem;
+    }
+    figcaption {
+        padding-top: 1rem;
+        font-size: 1rem;
+        font-family: var(--font-family-base);
+        font-weight: 600;
+    }
+    /* here begins the footer*/
+    .footer-page {
+        background-color: var(--color-principal1);
+        width: 100%;
+        height: 10vmax;
+    }
+}
