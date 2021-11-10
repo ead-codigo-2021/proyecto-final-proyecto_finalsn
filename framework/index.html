@@ -1,98 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Documentación del Framework</title>
-	<link rel="stylesheet" href="assets/css/framework.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion</title>
 	<link rel="stylesheet" href="assets/css/docs.css">
+	<link rel="stylesheet" href="..//framework/assets/js/framework.js">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Framework</title>
 </head>
-
 <body>
-	<header>
-        <div class="brand-logo">
-            <a href="#"><img src="https://www.markuptag.com/images/white-logo-icon.png" alt="Brand Logo"></a>
+    <div class="container">
+        <div class="header">
+			<nav class="navbar">
+				<div class="titulo-navbar"></div>
+				<a href="#" class="toggle-button">
+				  <span class="bar"></span>
+				  <span class="bar"></span>
+				  <span class="bar"></span>
+				</a>
+				<div class="links-navbar">
+					<ul>
+						<li><a href="..//framework/index.html">Inicio</a></li>
+						<li><a href="#">Bitácoras</a>
+							<ul>
+								<li class="sub-item"><a href="#">Soledad Araya</a></li>
+								<li class="sub-item"><a href="#">Natalia Soto</a></li>
+							</ul>
+						</li>
+						<li><a href="https://github.com/ead-codigo-2021/proyecto-final-proyecto_finalsn">Repositorio</a></li>
+						<li><a href="https://wiki.ead.pucv.cl/Casiopea">Wiki</a></li>
+					</ul>
+				</div>
+			</nav>
         </div>
-
-        <input type="checkbox" id="toggle-btn">
-        <label for="toggle-btn" class="show-menu-btn"><i class="fas fa-bars"></i></label>
-
-        <nav>
-            <ul class="navigation">
-                <li><a href="#"><i class="fas fa-house-damage"></i> Home</a></li>
-                <li><a href="#"><i class="far fa-image"></i> Item 1</a></li>
-                <li><a href="#"><i class="fab fa-blogger-b"></i> Item 2</a></li>
-                <li><a href="#"><i class="fas fa-question"></i> Item 3</a></li>
-                <li><a href="#"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
-                <label for="toggle-btn" class="hide-menu-btn"><i class="fas fa-times"></i></label>
-                <input type="text" placeholder="Search..">
+           
+        <div class="descripción">
+            <h1>Elementos Framework</h1>
+            <h2>Soledad Araya - Natalia Soto Vásquez</h2>
+            <div class="parrafodescripcion">
+                <p>Presentación de los componentes trabajados en HTML, CSS y JAVA para la construcción de 
+                    un framework.</p>
+            </div>
+        </div>
+        <div class="enlaces-y-elementos">
+            <h2 class="componentes">Componentes</h2>
+            <ul>
+                <li><a href="..//framework/navbar.html"> Barra de navegación</a></li>
+                <li><a href="..//framework/cartas.html">Cartas de elementos</a></li>
+                <li><a href="..//framework/mapas.html">Presentación de mapas</a></li>
+                <li><a href="..//framework/redessociales.html">Presentación redes sociales</a></li>
+                <li>Ventana modal</li>
+                <li>Botones</li>
+                <li>Input</li>
+                <li></li>
+                <li></li>
             </ul>
-        </nav>
-    </header>
-	<h1> Ofertas de halloween</h1>
-	<main class="container">
-		<div class="gallery">
-			<div class="container-box">
-				<figure class="sub-box">
-					<img src="./assets/imagenes/imagen4.png" alt="mi muñeca me habló" width="300" height="300">
-				</figure>	
-			</div>
-			<div class="container-box">
-				<figure class="sub-box">
-					<img src="./assets/imagenes/imagen3.png" alt="mi muñeca me habló" width="300" height="300">
-				</figure>
-			</div>
-			<div class="container-box">
-				<figure class="sub-box">
-					<img src="./assets/imagenes/imagen1.jpg" alt="mi muñeca me habló" width="300" height="300">
-				</figure>
-			</div>
-			<div class="container-box">
-				<figure class="sub-box">
-					<img src="./assets/imagenes/imagen2.jpg" alt="mi muñeca me habló" width="300" height="300">
-				</figure>
-			</div>
-		</div>
-		<div class="gallery">
-			<div class="container-box">
-				<figure class="sub-box">
-					<img src="./assets/imagenes/imagen4.png" alt="mi muñeca me habló" width="300" height="300">
-				</figure>
-			</div>
-			<div class="container-box">
-				<figure class="sub-box">
-					<img src="./assets/imagenes/imagen3.png" alt="mi muñeca me habló" width="300" height="300">
-				</figure>
-			</div>
-			<div class="container-box">
-				<figure class="sub-box">
-					<img src="./assets/imagenes/imagen1.jpg" alt="mi muñeca me habló" width="300" height="300">
-				</figure>
-			</div>
-			<div class="container-box">
-				<figure class="sub-box">
-					<img src="./assets/imagenes/imagen2.jpg" alt="mi muñeca me habló" width="300" height="300">
-				</figure>
-			</div>
-		</div>
-		<!----Mapa google maps
-		<div class="mapa">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.6932758183!2d-0.3817814924839706!3d51.528307973033336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2scl!4v1634605571119!5m2!1sen!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-	
-		//Botón redes sociales// -->
-	</main>
-	<footer>
-		<a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-whatsapp"></a>
-	</footer>
-
+            <h2 class="componentes"> Sitios</h2>
+            <ul>
+                <li><a href="../sitio-1/index.html">Sitio 1 - E-commerce</a></li>
+                <li><a href="..//sitio-2/index.html">Sitio 2 - Blog de viaje</a></li>
+            </ul>
+        </div>
+        <div class="Footer">
+            <h2 class="curso">Diseño desde el código 2021</h2>
+            <h3 class="escuela">Escuela de Arquitectura y Diseno E[ad] PUCV</h3>
+            <link href="https://wiki.ead.pucv.cl/Dise%C3%B1o_desde_el_C%C3%B3digo_2021">
+        </div>
+      </div> 
 </body>
-
 </html>
