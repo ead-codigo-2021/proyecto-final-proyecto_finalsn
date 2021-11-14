@@ -10,21 +10,19 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<script src="./assets/sitio-1.js"></script>
 	<title>Framework</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
 </head>
 
 <body>
 	<header class="page-header">
-		<section class="header-background">
-			<figure>
-				<img src="../framework/assets/imagenes/fondo.jpg" alt="Es una foto de un closet con ropa">
-			</figure>
-		</section>
+		<section class="header-background"></section>
 		<nav class="navbar">
 			<div class="titulo-navbar">Mi closet</div>
 			<a href="#" class="toggle-button">
-			<!----  <span class="bar"></span>
 			  <span class="bar"></span>
-			  <span class="bar"></span>-->
+			  <span class="bar"></span>
+			  <span class="bar"></span>
 			</a>
 			<div class="links-navbar">
 			  <ul>
@@ -36,7 +34,7 @@
 				</li>
 				<li><a href="mujer.html">Mujer</a>
 					<ul>
-						<li class="sub-item"><a href="#">vestidos</a></li>
+						<li class="sub-item"><a href="../sitio-1/vestidos.html">vestidos</a></li>
 						<li class="sub-item"><a href="#">chaquetas</a></li>
 						<li class="sub-item"><a href="#">Tops y Poleras</a></li>
 					</ul>
@@ -53,56 +51,74 @@
 			</div>
 		  </nav>
 	</header>
+
+	<input type="checkbox" id="cerrar">
+	<label for="cerrar" id="btn-cerrar">X</label>
+	<div class="modal">
+		<div class="contenido">
+			<h2>OFERTAS</h2>
+			<h2>Código : Vacaciones 2021</h2>
+	<img>
+		</div>
+	</div>
+
 	<main>
 		<div class="center-h1">
-			<h1> Ofertas de Halloween</h1>	
+			<h1> Categorías</h1>	
 		</div>
-		<div class="grid-container">
-			<div class="item">
-				<h2>Niñxs y mascotas</h2>
-			</div>
-			<figure class="sub-box1">
-				<img src="./assets/imágenes/imagen (1).png" alt="Disfraz de unicornio para perros">
-				<figcaption>Disfraz de unicornio para perros de razas pequeñas.	
-				</figcaption>
-			</figure>
-			<figure class="sub-box2">
-				<img src="./assets/imágenes/imagen (2).png" alt="Disfraz de esqueleto para niños">
-				<figcaption>Disfraz cuerpo completo esqueleto.</figcaption>
-			</figure>
-			<figure class="sub-box3">
-				<img src="./assets/imágenes/imagen (31).jpg" alt="Disfraz de spiderman para niños">
-				<figcaption>Disfraz de spiderman para niñxs.</figcaption>
-			</figure>
-			<figure class="sub-box4">
-				<img src="./assets/imágenes/imagen (33).jpg" alt="Disfraz de halloween para perros">
-				<figcaption>Disfraz de halloween para perros de razas pequeñas.</figcaption>
-			</figure>
-			<div class="item">
-				<h2>Adulto</h2>
-			</div>
-			<figure class="sub-box5">
-				<img src="./assets/imágenes/imagen (27).jpg" alt="Disfraz de bruja para mujer">
-				<figcaption>Disfraz de bruja, dos piezas, sombrero y blusa negra.</figcaption>
-			</figure>
-			<figure class="sub-box6">
-				<img src="./assets/imágenes/imagen (28).jpg" alt="Disfraz del sombrerero loco">
-				<figcaption>Disfraz sombrero loco de Alicia en el país de las maravillas.</figcaption>
-			</figure>
-			<figure class="sub-box7">
-				<img src="./assets/imágenes/imagen (32).jpg" alt="Antifaz de gato">
-				<figcaption>  Artículo antifaz de gato.</figcaption>
-			</figure>
-			<figure class="sub-box8">
-				<img src="./assets/imágenes/imagen (29).jpg" alt="Diadema con flores blancas">
-				<figcaption>Artículo diadema con flores blancas para disfraz de catrina.</figcaption>
-			</figure>
-		</div>
-	</main>
-	<footer class="footer-page">
+		
 
+		  <!--Tarjetas-->
+		<div class="container">
+
+			<div class="tarjeta1">
+				<h2>Mujeres</h2>
+				<a href="../sitio-1/mujer.html"></a>
+				<img src="../sitio-1/assets/imágenes/imagen (7).jpg" alt="Disfraz de unicornio para perros">
+			</div>
+
+			<div class="tarjeta2">
+				<h2>Hombres</h2>
+				<img src="../sitio-1/assets/imágenes/imagen (26).jpg" alt="Disfraz de unicornio para perros">
+				
+			</div>
+
+			<div class="tarjeta3">
+				<h2>Niños</h2>
+				<img src="../sitio-1/assets/imágenes/imagen (21).jpg" alt="Disfraz de unicornio para perros">
+				
+			</div>
+
+			<div class="tarjeta4">
+				<h2>Disfraces</h2>
+				<img src="../sitio-1/assets/imágenes/imagen (27).jpg" alt="Disfraz de unicornio para perros">
+				
+			</div>
+			
+			<div class="tarjeta5">
+				<h2>Mascotas</h2>
+				<img src="../sitio-1/assets/imágenes/imagen (1).png" alt="Disfraz de unicornio para perros">
+				
+			</div>	
+		</div>
+
+		<!--Buscador-->
+		<div class="container-buscador">
+			<input type="text" name="search" placeholder="Buscar..." class="input" />
+			  <a href="#" class="icono">
+			  <i class="fas fa-search"></i>
+			</a>
+		  </div>
+	</main>
+	
+
+	<footer class="footer-page">
+		<li class="lifooter">Avenida Valparaíso #1350</li>
+		<li class="lifooter">Valparaíso / Valparaíso</li>
+		<li class="lifooter">2021</li>
 	</footer>
 
 </body>
 
 </html>
+
