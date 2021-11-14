@@ -285,7 +285,7 @@ header{
 footer{
         background-color: var(--color-principal1);
         width: 100%;
-        height: 10vmax;
+        height: fit-content;
         padding: 30px;
     }
 
@@ -320,12 +320,12 @@ footer{
     .contenido {
         margin: auto;
         justify-content: center;
-        width: 40%;
-        height: 40%;
+        width: fit-content;
+        height: fit-content;
         background: #17706E;
         border-radius: 10px;
         padding: 20px;
-        padding-top: 100px;
+        padding-top: 50px;
         text-align: center;
         font-family: Roboto;
         color: white;
@@ -523,4 +523,30 @@ footer{
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
   
-
+@media (max-width:800px){
+    .container {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 1px 1px; 
+        grid-template-areas: 
+          "tarjeta1"
+          "tarjeta2"
+          "tarjeta3"
+          "tarjeta4"
+          "tarjeta5"
+          "tarjeta6"
+          "tarjeta7"
+          "tarjeta8"; 
+      }
+      .tarjeta1 { grid-area: tarjeta1; }
+      .tarjeta2 { grid-area: tarjeta2; }
+      .tarjeta3 { grid-area: tarjeta3; }
+      .tarjeta4 { grid-area: tarjeta4; }
+      .tarjeta5 { grid-area: tarjeta5; }
+      .tarjeta6 { grid-area: tarjeta6; }
+      .tarjeta7 { grid-area: tarjeta7; }
+      .tarjeta8 { grid-area: tarjeta8; }
+}
