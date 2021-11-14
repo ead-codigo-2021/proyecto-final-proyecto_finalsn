@@ -207,6 +207,25 @@ h2 {
     background-color:white;
 
 }
+.mapa-ubicacion{
+    overflow:hidden;
+    padding-top: 2rem;
+    padding-bottom:56%;
+    position:relative;
+    height:0;
+    border: #17706E 5px solid;
+    border-radius: 25px;
+    width:70%;
+  
+}
+
+.mapa-ubicacion iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 .main-left-bottom-right{
     grid-template-columns: 2 / 3;
     background-color:white;
@@ -234,7 +253,8 @@ h2 {
 figure {
     display: grid;
     color: var(--color-principal1);
-    padding-top: 2rem;
+    padding: 2rem 2rem 2rem 0rem;
+    align-items: center;
 }
 figure img {
     background-color: #D9D9D9;
