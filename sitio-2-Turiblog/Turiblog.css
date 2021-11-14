@@ -39,7 +39,7 @@
   .textleft { grid-area: textleft; 
     padding-top: 10px;
     text-align: center;
-    background-image: url(../sitio-2-Turiblog/assets/viajar\ \(2\).jpg);
+    /*background-image: url(../sitio-2-Turiblog/assets/viajar\ \(2\).jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -59,7 +59,7 @@
     }
   
   .textright { grid-area: textright;
-    background-image: url(../sitio-2-Turiblog/assets/viajar\ \(3\).jpg);
+    /*background-image: url(../sitio-2-Turiblog/assets/viajar\ \(3\).jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
