@@ -11,37 +11,37 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <nav class="navbar">
-				<div class="titulo-navbar"></div>
-				<a href="#" class="toggle-button">
-				  <span class="bar"></span>
-				  <span class="bar"></span>
-				  <span class="bar"></span>
-				</a>
-				<div class="links-navbar">
-					<ul>
-						<li><a href="..//framework/index.html">Inicio</a></li>
-						<li><a href="#">Bitácoras</a>
-							<ul>
-								<li class="sub-item"><a href="#">Soledad Araya</a></li>
-								<li class="sub-item"><a href="#">Natalia Soto</a></li>
-							</ul>
-						</li>
-						<li><a href="https://github.com/ead-codigo-2021/proyecto-final-proyecto_finalsn">Repositorio</a></li>
-						<li><a href="https://wiki.ead.pucv.cl/Casiopea">Wiki</a></li>
-					</ul>
-				</div>
-			</nav>
+      <div class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html" class="active">Inicio</a>
+            <a href="https://github.com/ead-codigo-2021/proyecto-final-proyecto_finalsn">Repositorio</a>
+            <a href="https://wiki.ead.pucv.cl/Dise%C3%B1o_desde_el_C%C3%B3digo_2021">Wiki</a>
+            <div class="dropdown">
+            <button class="dropbtn">Bitácoras
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="https://github.com/ead-codigo-2021/bitacora-Saraya-js">Soledad Araya</a>
+              <a href="https://github.com/ead-codigo-2021/bitacora-NataliaSl21">Natalia Soto</a>
+            </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
+      </div>
            
         <div class="descripción">
             <h1>Cartas de elementos</h1>
-            <p>Las tarjetas se encuentran superpuestas, donde la delantera muestra una imagen y la trasera datos relevantes a la imagen.</p>
+            <p>Las tarjetas se encuentran superpuestas, donde la delantera muestra una imagen y la trasera datos relevantes a la imagen. Hay dos tipos
+              uno con una leyenda y un segundo sin imagen que permite mostrar y ocultar texto con respecto a un producto o servicio. 
+              Cuando el usuario arrastra el mouse por encima de ellas se genera la acción de mostrar u ocultar la información.
+            </p>
         </div>
 
         <div class="enlaces-y-elementos">
             <h2>Imagenes referenciales</h2>
+              <img src="../framework/assets/imagenes/recorte de componentes/card-con-fotografía2.JPG">
+              <img src="./assets/imagenes/recorte de componentes/card-sinimagen.JPG">
+
             <h2>Código</h2>
             <p>Modelo 1</p>
             <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNeaZwO" data-user="solcito1" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
