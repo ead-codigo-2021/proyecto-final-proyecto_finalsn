@@ -194,7 +194,7 @@ header{
         background: transparent;
         border: none;
         outline: none;
-        width: 0px;
+        width: 2px;
         font-size: 1.2rem;
         transition: 1s;
       }

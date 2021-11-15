@@ -7,17 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turiblog</title>
     <link rel="stylesheet" href="../Turiblog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="grid-container">
-    <header class="page-header">
-        <nav class="navbar">
-            <div class="titulo-navbar">TuriBlog</div>
-            <a href="#" class="toggle-button">
-                <!----  <span class="bar"></span>
-			  <span class="bar"></span>
-			  <span class="bar"></span>-->
-            </a>
+<body>
+    <div class="container">
+        <div class="nav">
+             <nav class="navbar">
+                <div class="titulo-navbar">TuriBlog</div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
             <div class="links-navbar">
                 <ul>
                     <li><a href="../index.html">Sobre mi</a></li>
@@ -35,79 +37,83 @@
                         </ul>
                     </li>
                     <li><a href="../asia.html">Asia</a>
-                        <ul>
-                            <li class="sub-item"><a href="./japón.html ">Japón</a></li>
+                        <ul><li class="sub-item"><a href="./japón.html ">Japón</a></li>
                             <li class="sub-item"><a href="#">Tailandia</a></li>
                             <li class="sub-item"><a href="#">India</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
-    <main class="page-main">
-        <div class="main-left-top" style="background-image: url(../assets/japón\ \(1\).jpg)">
-            <h1>Conociendo Japón</h1>
-            <p>Soy Pierre, viajero incansable. Partí a los 19 años mi aventura por el mundo y no he parado hasta el día
-                de hoy.
-                He conocido culturas maravillos y he aprendido cosas que nunca había siquiera imaginado</p>
+            </nav>
         </div>
-        <div class="main-left-bottom">
-            <div class="main-left-bottom-left">
-                <h2>Escocia</h2>
-                <figure>
-                    <img src="../assets/escocia.jpg" alt="Imagen de una castillo en Escocia.">
-                </figure>
-                <div class="mapa-ubicacion">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4369463.3792858925!2d-9.17237094672978!3d57.67352242761149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861e2c403f2a19f%3A0xe7c1fad809c30714!2sEscocia%2C%20Reino%20Unido!5e0!3m2!1ses-419!2scl!4v1636863621698!5m2!1ses-419!2scl" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-            <div class="main-left-bottom-right">
-                <h2>Alemania</h2>
-                <figure>
-                    <img src="../assets/alemania.jpg" alt="Imagen de una castillo en Alemania.">
-                </figure>
-                <div class="mapa-ubicacion">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4369463.3792858925!2d-9.17237094672978!3d57.67352242761149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861e2c403f2a19f%3A0xe7c1fad809c30714!2sEscocia%2C%20Reino%20Unido!5e0!3m2!1ses-419!2scl!4v1636863621698!5m2!1ses-419!2scl" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+
+        <div class="textleft" style="background-image: url(../assets/japón\ \(1\).jpg);">
+        <main class="page-main">
+                <h1>Japón</h1>
+                <p>Viajes entre enero y marzo 2018</p>
+        </div>
+        
+        <div class="textright" style="background-image: url(../assets/japón\ \(2\).jpg);">
+            <div class="main-right-top" style="background-image: url(./assets/américa\ \(2\).jpg)">
             </div>
         </div>
-        <div class="main-right-top" style="background-image: url(../assets/japón\ \(2\).jpg)">
-        </div>
-        <div class="main-right-bottom">
-            <div class="main-right-bottom-left">
-                <h2>Japón</h2>
+
+        <div class="card1">
+                <h2>Valparaíso</h2>
                 <figure>
-                    <a href="./sub-sitios/japón.html"></a>
-                    <img src="../assets/japón.jpg" alt="Imagen de una calle en Japón.">
+                    <img src="../assets/valparaiso.png" alt="Imagen de Valparaiso.">
+                </figure>
+                <p>Valparaíso es una ciudad portuaria de la costa de Chile. Es conocida por sus empinados funiculares 
+                    y las coloridas casas sobre los cerros. La Sebastiana, la extravagante residencia antigua del poeta chileno
+                     Pablo Neruda, es actualmente un museo con amplias vistas del Pacífico. Durante el siglo XIX, una afluencia 
+                     de inmigrantes europeos dejó su huella en la arquitectura de la ciudad y las instituciones culturales, muchas
+                      de las cuales se congregan en torno a la Plaza Sotomayor en el centro de la ciudad.</p>
+        </div>
+
+        <div class="card-2">
+                <h2>Chiloé</h2>
+                <figure>
+                    <img src="../assets/chiloe.jpg" alt="Imagen de Chiloé.">
+                </figure>
+                <p>La isla de Chiloé, la isla principal del archipiélago del mismo nombre, se encuentra en el sur de Chile.
+                     Tiene paisajes pastorales y es conocida por sus icónicas iglesias de madera, construidas por misioneros
+                      jesuitas en los siglos XVII y XVIII.</p>
+        </div>
+       
+        <div class="card3">
+                <h2>Pomaire</h2>
+                <figure>
+                    <img src="../assets/pomaire.jpg" alt="Imagen de Pomaire.">
                     <div class="center"></div>
                 </figure>
-                <div class="mapa-ubicacion">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27804084.12672812!2d120.26698394364534!3d31.714440679464374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2zSmFww7Nu!5e0!3m2!1ses-419!2scl!4v1636863456998!5m2!1ses-419!2scl"
-                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-            <div class="main-right-bottom-right">
-                <h2>Chile</h2>
+                <p>Pomaire es un pueblo pequeño de artesanos alfareros, pertenecientes a la Comuna de Melipilla, a 
+                    50 kilómetros al oeste de Santiago. Su población es de 10 000 habitantes. Es muy famosa por su gran
+                     talento en la greda.</p>
+        </div>
+
+        <div class="card4">
+                <h2>Iquique</h2>
                 <figure>
-                    <img src="../assets/chile.jpg" alt="Imagen de Isla de Pascua, Chile.">
+                    <img src="../assets/iquique.jpg" alt="Imagen de Iquique.">
+                    <div class="center"></div>
                 </figure>
-                <div class="mapa-ubicacion">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26640769.98295583!2d-106.2614894151804!3d-35.40408263676706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x505e1131102b91d!2sChile!5e0!3m2!1ses-419!2scl!4v1636863716568!5m2!1ses-419!2scl"
-                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               <p>Iquique es una ciudad costera en el norte de Chile, al oeste del desierto de Atacama. Fue un próspero pueblo 
+                   minero de salitre en el siglo XIX y hoy es un destino vacacional popular, con una zona portuaria libre de impuestos, 
+                   playas del Pacífico y un casino frente al mar. </p>
+                
+        </div>
+
+        <div class="footer">
+            <footer class="page-footer">
+                <div class="social-media">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>  
                 </div>
-            </div>
+                <p>Pierre Durand</p>
+            </footer>
         </div>
-    </main>
-    <footer class="page-footer">
-        <div class="social-media">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-whatsapp"></a>
-            <p>Pierre Durand</p>
-        </div>
-    </footer>
+    </div>
 </body>
+</html>
